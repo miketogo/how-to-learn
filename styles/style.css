@@ -13,6 +13,9 @@ section, header{
   display: flex;
   flex-direction: row;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -36,7 +39,7 @@ section, header{
   display: flex;
   align-items: center;
   height: 100vh;
-  min-height: 600px;
+  min-height: 600px; /*При 640 header__square-pic не вылезает при сжатии, потому что он привязан к верхней границе, а изменяется нижняя, а в брифе информация только о привязке к верхней*/
   max-height: 756px;
   width: 100vw;
   max-width: 1600px;
@@ -176,11 +179,57 @@ section, header{
 .two-columns__paragraph:nth-of-type(3n){
   margin-bottom: 0;
 }
-.test{
-  width: 500px;
-  height: 300px;
-  background-color: brown;
-}
+
 .digits{
   margin-top: 100px;
+  align-items: center;
+}
+
+.section-title{
+  width: 60%;
+
+}
+.section-title__text{
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.section-subtitle{
+  margin-top: 20px;
+  width: 60%;
+
+}
+.section-subtitle__text{
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.table{
+  justify-content: space-between;
+  width: 1100px;
+}
+.table__cell{
+  margin-top: 60px;
+  width: 250px;
+}
+.table__heading{
+
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.table__text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0;
+  padding: 0;
 }
