@@ -9,33 +9,27 @@
 </head>
 <body>
   <div class="page">
-    <header class="header">
-      <div class="header_position_absolute">
-        <div class="logo logo_place_header"></div>
-        <div class="header__title">
-          <h1 class="title_text">Научиться учиться</h1>
-        </div>
-        <div class="header__subtitle">
-          <h2 class="header__subtitle_text">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a href="#" class="subtitle__link"> Узнать →</a></h2>
-        </div>
+    <header class="header flex-row">
+        <img src="./images/logo_place_header.svg" class="logo" alt="Логотип">
+        <h1 class="header__title">Научиться учиться</h1>
+        <h2 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a href="#" class="subtitle__link"> Узнать →</a></h2>
         <div class="header__square-pic"></div>
-        <img src="./images/header-image.png" class="header__main-illustration" alt="Мальчик с собакой">
-      </div>
+        <img src="./images/header-image.png" class="header__main-illustration" alt="Мальчик с собакой, картина - Опять двойка">
     </header>
     <main class="content flex-column">
       <section class="description">
-        <div class="two-columns flex-row">
-          <div class="two-columns_brief"><h1 class="two-columns__brief_text">Главные проблемы в обучении</h1></div>
+        <div class="flex-row two-columns">
+          <h1 class="two-columns__brief">Главные проблемы в обучении</h1>
           <div class="two-columns__main-text flex-column">
-            <div class="two-columns__paragraph"><h1 class="two-columns__paragraph_text">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</h1></div>
-            <div class="two-columns__paragraph"><h1 class="two-columns__paragraph_text"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</h1></div>
-            <div class="two-columns__paragraph"><h1 class="two-columns__paragraph_text">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</h1></div>
+            <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+            <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+            <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
           </div>
         </div>
       </section>
       <section class="digits flex-column">
-        <div class="section-title"><h1 class="section-title__text">Цифры и факты</h1></div>
-        <div class="section-subtitle"><h2 class="section-subtitle__text">Про учёбу и мозг</h2></div>
+        <h1 class="section-title">Цифры и факты</h1>
+        <h2 class="section-subtitle">Про учёбу и мозг</h2>
         <div class="table flex-row flex-wrap">
           <div class="table__cell flex-column"><h3 class="table__heading">86 миллиардов</h3><p class="table__text">Число нейронов в мозге человека</p></div>
           <div class="table__cell flex-column"><h3 class="table__heading">2.1 миллиарда</h3><p class="table__text">Число нуждающихся в повышении квалификации</p><p class="table__text">Всемирный Банк, 2017</p></div>
@@ -48,29 +42,29 @@
         </div>
       </section>
       <section class="feynman flex-column">
-
         <h1 class="feynman__title">Метод Фейнмана</h1>
         <h2 class="feynman__subtitle">Выучить и не забыть.</h2>
-        <div class="feynman-absolute">
         <a href="#" class="feynman__link">Подробнее →</a>
-        </div>
-        <!--<div class="">
-          <div class=""></div>
-          <div class="">
-            <h1 class=""></h1>
-          </div>
-          <div class="">
-            <h2 class=""><a href="#" class="subtitle__link"></a></h2>
-          </div>
-          <div class=""></div>
-          <img src="./images/feynman.png" class="header__main-illustration" alt="Мальчик с собакой">
-        </div>-->
-
-
-
       </section>
+      <section class="kaufman flex-column">
+        <h1 class="section-title section-title_theme_dark">Принципы обучения</h1>
+        <h2 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h2>
+        <div class="table table_theme_dark flex-row flex-wrap">
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">1</h3><p class="table__text ">Выберите привлекательный проект.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">2</h3><p class="table__text ">Сосредоточьтесь на каком-то одном навыке.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">3</h3><p class="table__text ">Определите целевой уровень мастерства.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">4</h3><p class="table__text ">Разбейте навык на элементы.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">5</h3><p class="table__text ">Приготовьте всё необходимое для занятий.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">6</h3><p class="table__text ">Устраните препятствия для занятий.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">7</h3><p class="table__text ">Выделите специальное время для занятий.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">8</h3><p class="table__text ">Создайте быстрые петли обратной связи.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">9</h3><p class="table__text ">Занимайтесь по расписанию, короткими интенсивными интервалами.</p></div>
+          <div class="table__cell table__cell_theme_dark flex-column"><h3 class="table__heading">10</h3><p class="table__text ">Уделяйте внимание количеству и скорости.</p></div>
 
-      <section class="kaufman">
+        </div>
+
+        <img src="./images/kaufman-triangle.svg" alt="Треугольник" class="kaufman__triangle">
+
       </section>
     </main>
     <footer class="footer">

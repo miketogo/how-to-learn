@@ -1,29 +1,29 @@
-div{
-/*  border: solid 1px red; /*!!!!*/
+div, h1, h2, h3, h4, h5, h6, img, p{
+ /*border: solid 1px red; /*!!!!*/
 }
+
 section, header{
-/*  border: solid 1px green;*/
+ /*border: solid 1px green;*/
 }
 
 .flex-column{
   display: flex;
   flex-direction: column;
 }
+
 .flex-row{
   display: flex;
   flex-direction: row;
 }
+
 .flex-wrap{
   flex-wrap: wrap;
 }
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -32,19 +32,8 @@ section, header{
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-
-  /* выше установили ограничения для секции */
-}
-.header_position_absolute{
-  display: flex;
+  position: relative;
   align-items: center;
-  height: 100vh;
-  min-height: 600px; /*При 640 header__square-pic не вылезает при сжатии, потому что он привязан к верхней границе, а изменяется нижняя, а в брифе информация только о привязке к верхней*/
-  max-height: 756px;
-  width: 100vw;
-  max-width: 1600px;
-  min-width: 1100px;
- position: absolute;
 }
 
 .header__square-pic {
@@ -56,13 +45,6 @@ section, header{
   top: 64px;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .logo{
   position: absolute;
   width: 183px;
@@ -70,45 +52,32 @@ section, header{
   top: 30px;
   left: 64px;
   z-index: 1;
-
-}
-.logo_place_header{
-  background-image: url('../images/logo_place_header.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .header__title{
   width: 730px;
-  margin-left: 64px;
   z-index: 1;
-
-}
-.title_text{
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 0 64px;
   padding: 0;
+
 }
+
 .header__subtitle{
   position: absolute;
   left: 64px;
   bottom: 30px;
   width: 388px;
-  align-self: flex-end;
   z-index: 1;
-
-}
-.header__subtitle_text{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
   padding: 0;
-
 }
+
 .subtitle__link{
   color: #2f80ed;
   text-decoration: none;
@@ -125,41 +94,44 @@ section, header{
   height: 608px;
 }
 .description{
-  margin-top: 100px;
-  width: 80%;
-  align-self: center;
+  justify-content: flex-end;
+  padding-top: 100px;
 }
 
 .two-columns{
+  margin: 0 auto;
   justify-content: space-between;
+  width: 80%;
+
 }
 
 .two-columns__main-text{
-
   min-width: 784px;
   width: 80%;
-
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.two-columns__brief_text{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  color: #2f80ed;
-}
-
-.two-columns_brief{
+.two-columns__brief{
  width: 175px;
  justify-content: flex-start;
+ line-height: 1.2;
+ font-size: 18px;
+ font-weight: normal;
+ margin: 0;
+ padding: 0;
+ color: #2f80ed;
 }
 
 .two-columns__paragraph{
-  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 30px 0;
+  padding: 0;
 }
+
 .two-columns__span-accent{
   line-height: 34px;
   font-size: 24px;
@@ -168,64 +140,54 @@ section, header{
   padding: 0;
 }
 
-.two-columns__paragraph_text{
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-}
-
 .two-columns__paragraph:nth-of-type(3n){
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .digits{
-  margin-top: 100px;
   align-items: center;
 }
 
 .section-title{
   width: 60%;
-
-}
-.section-title__text{
+  margin: 100px 0 0;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: 0;
   padding: 0;
 }
+
 .section-subtitle{
   margin-top: 20px;
   width: 60%;
-
-}
-.section-subtitle__text{
   text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
   padding: 0;
+
 }
+
 .table{
   justify-content: space-between;
   width: 1100px;
+  margin: 0 0 100px;
 }
+
 .table__cell{
   margin-top: 60px;
   width: 250px;
 }
-.table__heading{
 
+.table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
+
 .table__text{
   line-height: 1.2;
   font-size: 18px;
@@ -233,15 +195,15 @@ section, header{
   margin: 20px 0 0;
   padding: 0;
 }
+
 .feynman{
-  margin-top: 100px;
+  position: relative;
   height: 790px;
   background-color: #f2f2f2;
   background-image: url('../images/feynman.png');
   background-position: left bottom;
   background-repeat: no-repeat;
   align-items: center;
-
 }
 .feynman__title{
   text-align: center;
@@ -262,14 +224,7 @@ section, header{
   margin: 70px 0 0;
   padding: 0;
 }
-.feynman-absolute{
-  position: absolute;
-  height: 790px;
-  width: 100vw;
-  max-width: 1600px;
-  min-width: 1100px;
 
-}
 .feynman__link{
   text-align: center;
   line-height: 51px;
@@ -282,4 +237,42 @@ section, header{
   position: absolute;
   top: 50%;
   right: 48px;
+}
+
+.kaufman{
+  background-color: #1f1f1f;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.table_theme_dark{
+  margin: 0 0 90px;
+  z-index: 1;
+}
+
+.section-title_theme_dark{
+  margin: 90px 0 0;
+  color: white;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark{
+  color: white;
+  z-index: 1;
+
+}
+
+.table__cell_theme_dark{
+  color: white;
+  margin-top: 80px;
+  width: 200px;
+}
+
+.kaufman__triangle{
+  position: absolute;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
 }
