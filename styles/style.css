@@ -7,10 +7,12 @@
   display: flex;
   flex-direction: row;
 }
+
 .align-items-center{
   align-items: center;
   justify-content: right;
 }
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -83,6 +85,7 @@
   text-decoration: none;
 
 }
+
 .header__main-illustration{
   padding: 0;
   margin: 0;
@@ -93,6 +96,7 @@
   width: 765px;
   height: 608px;
 }
+
 .description{
   justify-content: flex-end;
   padding-top: 100px;
@@ -166,7 +170,6 @@
   font-size: 24px;
   font-weight: normal;
   padding: 0;
-
 }
 
 .table{
@@ -205,6 +208,7 @@
   background-repeat: no-repeat;
   align-items: center;
 }
+
 .feynman__title{
   text-align: center;
   width: 648px;
@@ -260,7 +264,6 @@
 .section-subtitle_theme_dark{
   color: white;
   z-index: 1;
-
 }
 
 .table__cell_theme_dark{
@@ -283,6 +286,7 @@
   background-color: #1f1f1f;
   justify-content: center;
 }
+
 .footer__columns{
   width: 90%;
   justify-content: space-between;
@@ -294,6 +298,7 @@
   height: 35px;
   background-image: url('../images/logo_place_footer.svg');
 }
+
 .footer_author{
   line-height: 25px;
   font-size: 18px;
@@ -302,6 +307,7 @@
   padding: 0;
   color: white;
 }
+
 .footer__column_content_copyright{
   justify-content: space-between;
   flex-basis: 711px;
