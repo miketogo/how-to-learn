@@ -1,0 +1,16 @@
+.footer__column-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+.footer__column-link:hover{
+  color: #2f80ed;
+}
