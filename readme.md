@@ -1,8 +1,8 @@
 # How to learn
 ------
 ### Project description
-This project is a website with information about __education__
-It works with *Flex* elements
+This project is a website with information about __education__.
+It works with *Flex* elements.
 ------
 ### Used technology
 * Flex
