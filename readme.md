@@ -1,4 +1,4 @@
-# H1 How to learn
+# How to learn
 ------
 ### Project description
 This project is a website with information about __education__
