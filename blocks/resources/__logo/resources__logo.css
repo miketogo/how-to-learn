@@ -1,4 +1,9 @@
 .resources__logo{
+  width: 270px;
+  height: 38px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 1;
   transition: opacity 0.1s ease-in;
   z-index: 2;
