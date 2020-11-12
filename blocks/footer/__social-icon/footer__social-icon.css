@@ -5,8 +5,3 @@
   padding: 0;
 }
 
-.footer__social-icon:hover{
-  background-color: #ffffffe1;
-  border-radius: 50%;
-  background-blend-mode: lighten;
-}
